@@ -1,0 +1,67 @@
++// color variables
+
+$secodary-color: #42b72a;
+$secodary-dark: #36a420;
+$secondary-light:#00a400;
+$primary-color:#1877f2;
+$primary-dark:#166fe5;
+
+$light-black: #283244;
+$dark-black:#1c1e21;
+$dark-grey: #9c9fa6;
+$light-grey:#dddfe2;
+$light-grey-2:#93979f;
+$light-grey-3:#606770;
+$white-smoke:#f0f2f5;
+$link-color:#385898;
+
+
+// media query veriable
+
+$largest: 68.75em;  // 1100px
+$medium:37.5em; //600px
+$small:31.25em; //500px
+$xsmall:20em; //320px
+$xxsmall:17.81em; //285px
+
+
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+
+    @media only screen and(max-width: $small){
+        font-size: 50.5%;
+    }
+    @media only screen and(max-width: $xsmall){
+        font-size: 40.5%;
+    }
+
+}
+
+body{
+    box-sizing: border-box;
+    background-color: $white-smoke;
+    // font-family: 'Poppins', sans-serif;
+    font-family: Helvetica Neue, Arial, sans-serif;
+
+}
+
+
+.container{
+    // width: 100vw;
+    // height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -1,0 +1,386 @@
+.popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, .8);
+    opacity: 0;
+    display: none;
+    transition: all .3s;
+
+
+
+
+    &_heading {
+        font-size: 3.2rem;
+
+    }
+
+    &_para {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        color: $light-grey-3;
+    }
+
+    ::placeholder {
+        color: $light-grey-2;
+    }
+
+    &_form {
+        width: 43.4rem;
+        background-color: #fff;
+        margin-top: 7rem;
+        padding-top: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 10px 10px $light-grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+
+
+    }
+
+    &_form_icon {
+
+
+        &_photo {
+            width: 2.3rem;
+            cursor: pointer;
+
+        }
+    }
+
+
+    &_content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -0.2rem;
+        width: 100%;
+
+    }
+
+    &_line {
+        width: 100%;
+        border-bottom: 1px solid $light-grey;
+    }
+
+    &_left {
+        margin-left: 1.5rem;
+    }
+
+    &_right {
+        margin-right: 1rem;
+        margin-top: -1rem;
+        fill: $light-grey-3;
+    }
+
+
+    &_form_group {
+
+        text-align: center;
+        margin-top: 1rem;
+
+        &_first_row {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: -0.3rem;
+        }
+
+        &_input {
+            padding: 1rem;
+            width: 19.4rem;
+            border-radius: 0.5rem;
+            outline: none;
+            border: 1px solid #ccd0d5;
+            font-size: 1.5rem;
+            background: #f5f6f7;
+        }
+
+
+
+        &_email_input {
+            width: 93%;
+        }
+
+        &_password_input {
+            width: 93%;
+        }
+
+        &_second_row {
+            display: flex;
+            margin-left: 2rem;
+            margin-top: 1.8rem;
+        }
+
+        &_icon {
+            width: 1.2rem;
+            height: 1.2rem;
+            fill: $light-grey-3;
+            vertical-align: text-bottom;
+            margin-left: 0.4rem;
+        }
+
+        &_date {
+            font-size: 1.2rem;
+            color: $light-grey-3;
+        }
+
+        &_gender {
+            display: flex;
+            margin-left: 2rem;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            color: $light-grey-3;
+            align-items: center;
+        }
+
+        &_third_row {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 0.3rem;
+        }
+
+
+        &_date_picker {
+            width: 12.5rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            outline: none;
+            border: 1px solid #ccd0d5;
+        }
+
+
+
+
+
+        &_month_picker {
+            width: 12.5rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            outline: none;
+            border: 1px solid #ccd0d5;
+        }
+
+
+
+
+        &_year_picker {
+            width: 12.5rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            outline: none;
+            border: 1px solid #ccd0d5;
+        }
+
+
+
+
+        &_fourth_row {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #custom:checked~.popup_form_group_five_row {
+            opacity: 0;
+        }
+
+        &_radio_option {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+
+        &_radio {}
+
+        &_radio_lable {
+            width: 12.5rem;
+            border: 1px solid #ccd0d5;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-size: 1.4rem;
+            color: $dark-black;
+            font-weight: 500;
+
+
+        }
+
+        &_radio_input {
+            font-size: 1.5rem;
+            margin-left: 3rem;
+            vertical-align: bottom;
+            font-weight: 500;
+        }
+
+
+
+        &_five_row {
+            display: none;
+
+        }
+
+        &_select_custom {
+            width: 93%;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            outline: none;
+            border: 1px solid #ccd0d5;
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            color: $dark-black;
+
+        }
+
+        &_six_row {
+
+            display: none;
+
+            ::placeholder {
+                color: $light-grey-2;
+                font-size: 1.5rem;
+            }
+        }
+
+
+        &_label {
+            display: flex;
+            margin-left: 2rem;
+            font-size: 1.2rem;
+            color: $light-grey-3;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+
+        }
+
+        &_optional_input {
+            width: 93%;
+            outline: none;
+            border-radius: 0.5rem;
+            border: 1px solid #ccd0d5;
+            padding: 1rem;
+        }
+
+
+        &_seven_row {
+            width: 94%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+
+        &_check_icon {
+            width: 1.4rem;
+            height: 1.4rem;
+            border-radius: 0.1rem;
+            position: absolute;
+            top: .2rem;
+            left: .6rem;
+            fill: $secondary-light;
+            opacity: 0;
+            border-radius: 0.1rem;
+
+
+        }
+
+        &_uncheck_icon {
+            width: 1.4rem;
+            height: 1.4rem;
+            position: absolute;
+            top: .2rem;
+            left: .6rem;
+            border-radius: 0.3rem;
+            border: 1px solid $light-grey-2;
+            cursor: pointer;
+
+
+        }
+
+
+        #checkbox:checked~.popup_form_group_check_icon {
+            opacity: 1;
+        }
+
+
+        &_para {
+            width: 92%;
+            font-size: 1.1rem;
+            color: $light-grey-3;
+            text-align: left;
+        }
+
+
+        &_policy_label {
+            margin-right: 0.2rem;
+            width: 1rem;
+            height: 1rem;
+
+
+        }
+
+        &_terms {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: baseline;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        #checkbox {
+            visibility: collapse;
+        }
+
+        &_para_link {
+            color: $link-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+        }
+
+        &_signup_btn {
+
+            width: 19.4rem;
+            border-radius: 0.5rem;
+            outline: none;
+            padding: 0.8rem 3.2rem;
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.8rem;
+            border: none;
+            background-color: $secodary-color;
+            margin-top: 2rem;
+            margin-bottom: 2.5rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $secodary-dark;
+            }
+
+        }
+
+
+    }
+
+
+}
+
+
+.active {
+    opacity: 0 !important;
+
+
+
+}
+
+.inactive {
+    opacity: 1;
+    display: inline-flex;
+
+}

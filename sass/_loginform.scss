@@ -1,0 +1,263 @@
+.main_box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 13rem;
+    margin-right: 4.6rem;
+
+
+
+    @media only screen and (max-width: $largest) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        margin-right: 0px;
+
+    }
+
+
+
+    &_left_content {
+        margin-bottom: 15rem;
+
+        @media only screen and (max-width:$largest) {
+            margin-bottom: 3rem;
+            margin-top: 2rem;
+        }
+
+
+        &_detail {
+            margin-right: 3rem;
+            margin-top: 2rem;
+
+
+            @media only screen and (max-width:$largest) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 0;
+                margin-right: 0;
+            }
+        }
+
+    }
+
+
+    &_photo {
+        width: 55%;
+
+        @media only screen and (max-width:$largest) {
+            width: 65%;
+        }
+
+        @media only screen and (max-width:$medium) {
+            width: 60%;
+        }
+
+    }
+
+
+    &_heading {
+        font-size: 2.8rem;
+        color: $dark-black;
+        line-height: 3.2rem;
+        font-weight: 100;
+        width: 54rem;
+        padding-left: 3rem;
+        transform: translateY(-1.2rem);
+
+        @media only screen and (max-width: $largest) {
+            text-align: center;
+            padding-left: 0;
+            width: 48rem;
+        }
+
+        @media only screen and (max-width: $medium) {
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width:$xxsmall) {
+            font-size: 1.8rem;
+            width: 29rem;
+        }
+
+    }
+
+    &_right_content {}
+
+    &_form {
+
+        width: 39.6rem;
+        margin-left: 4rem;
+
+        @media only screen and (max-width: $largest) {
+            margin-left: 0;
+        }
+
+    }
+
+
+    .form {
+        background-color: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 3px 10px -1px #d5cdcd;
+
+
+
+        &_group {
+
+            text-align: center;
+            padding: 0rem 1.8rem;
+
+
+
+            :nth-child(1) {
+                margin-top: 1.5rem;
+            }
+
+
+
+        }
+
+
+        &_input {
+            padding: 1.4rem 1.6rem;
+            width: 100%;
+            border-radius: 6px;
+            border: 1px solid rgba($light-grey, 1.0);
+            font-size: 1.7rem;
+            color: $dark-black;
+            outline: none;
+            font-weight: 200;
+
+
+            &:focus {
+                border-color: $primary-color;
+            }
+
+        }
+
+
+        &_group_btn {
+            text-align: center;
+        }
+
+        &_group_forgot {
+            text-align: center;
+            margin-top: 2rem;
+
+
+
+
+        }
+
+        &_group_create {
+            text-align: center;
+
+
+        }
+
+
+    }
+
+    .straight_line {
+        width: 90%;
+        text-align: center;
+        margin: 1.5rem auto;
+        margin-top: 2rem;
+        border-top: 1px solid rgba($light-grey, 1.0);
+    }
+
+    .login-btn {
+        width: 92%;
+        padding: 1.3rem 1.6rem;
+        border-radius: 6px;
+        text-align: center;
+        font-size: 2rem;
+        color: #fff;
+        background-color: $primary-color;
+        border: none;
+        outline: none;
+        font-weight: 600;
+        margin-top: 1.6rem;
+        cursor: pointer;
+
+
+        &:hover {
+            background-color: $primary-dark;
+        }
+
+    }
+
+
+    .forget_pass {
+        display: inline-block;
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: $primary-color;
+
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+
+    .create_account_btn {
+        padding: 1.4rem 1.5rem;
+        background-color: $secodary-color;
+        color: #fff;
+        font-size: 1.7rem;
+        border: none;
+        border-radius: 6px;
+        margin-bottom: 2rem;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $secodary-dark;
+        }
+
+
+
+        &_link {
+            text-decoration: none;
+            color: #fff;
+
+        }
+
+    }
+
+}
+
+
+::placeholder {
+    color: $light-grey-2;
+}
+
+.info_line {
+
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    color: $dark-black;
+
+
+
+
+    &_text {
+
+        color: $dark-black;
+        font-weight: 600;
+        text-decoration: none;
+
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+}
